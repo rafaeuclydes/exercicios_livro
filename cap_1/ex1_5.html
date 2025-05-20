@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo do dobro de um número</title>
+</head>
+<body>
+    <h2>Cálculo do dobro de um número</h2><br>
+    <p>Digite um número: </p>    <input > <button>Resolver</button>
+    <p>Resultado:</p> <p id="resultado"></p>
+    <script>
+        //const mostrarResultado = document.getElementById('resultado')
+        //const numero = document.querySelector('input');
+        //const resultado = numero*2;
+        //mostrarResultado.innerText = resultado;
+        
+        //Exemplo 5
+        //const numero = prompt ('Digite um número: ')
+        //const resultado = numero / 2;
+        //alert('O resultado é: ' + resultado);
+        //Tentar depois...cria um eventlistener depois de criar um botão no html e dentro do event de click faz uma arrow function que pega o valor do input divide por 2 e joga no resuldado com o innerText
+        
+        const numero = document.querySelector('input');
+        const botao = document.querySelector('button');
+        const resultado = document.getElementById('resultado');
+
+        botao.addEventListener('click', () => {
+            const rest = Number(numero.value * 2); //quando referencia uma entrada do html eu PRECISO colocar o .value p puxar o valor ou o q foi digitado no campo de interação com o usuário
+            resultado.innerHTML = rest;
+        })
+
+    </script>
+</body>
+</html>

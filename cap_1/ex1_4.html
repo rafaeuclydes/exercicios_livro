@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de variáveis</title>
+</head>
+<body>
+    <h2>Tipos de variáveis</h2>
+    <li>
+        <ul id = string></ul>
+        <ul id = number></ul>
+        <ul id = boolean></ul>
+        <ul id = undefined></ul>
+    </li>
+    <script>
+        //Exemplo 1.4
+        const fruta = "banana";
+        const preco = 5.29;
+        const levar = true;
+        let novoValor;
+
+        const tipoFruta = typeof "banana";
+        const tipoPreco = typeof 5.29;
+        const tipoLevar = typeof true;
+
+        const tipoString = document.getElementById('string');
+        const tipoNumero = document.getElementById('number');
+        const tipoBoolean = document.getElementById('boolean');
+        const tipoIndefinido = document.getElementById('undefined');
+
+        tipoString.innerText = fruta + ' é uma variável do tipo ' + tipoFruta;
+        tipoNumero.innerText = preco + ' é uma variável do tipo ' + tipoPreco;
+        tipoBoolean.innerText = levar + ' é uma variável do tipo ' + tipoLevar;
+        tipoIndefinido.innerText = 'A let novoValor é do tipo ' + novoValor;
+
+    </script>
+</body>
+</html>

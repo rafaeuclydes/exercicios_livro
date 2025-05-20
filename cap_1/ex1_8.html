@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de duração de horas de uma viagem</title>
+</head>
+<body>
+    <script>
+        const diasViagem = Number(prompt('Quantos dias serão de viagem: '));
+        const horas = Number(prompt('Quantas horas: '))
+        const diasConvertido = diasViagem * 24;
+        const totalViagemEmHoras = diasConvertido + horas;
+
+        alert(`O tempo total da viagem em hora será: ${totalViagemEmHoras}`);
+        //opção mais resumida é tirar o totalViagemEmHoras e incluir as horas no diasConvertidos
+        //const diasConvertido = (diasViagem * 24) + horas;
+
+    </script>
+</body>
+</html>
